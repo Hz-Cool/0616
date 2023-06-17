@@ -1,16 +1,8 @@
-import React, { useEffect, useState, useRef } from "react";
-import styles from "./index.less";
-import { Modal, Button } from "antd";
+import React, { memo, useState } from "react";
+import Modal from "./components/index";
 
-interface Props {}
-
-const ModalElement = (props: Props) => {
-  const [visible, setVisible] = useState<boolean>(true);
-  return (
-    <div>
-      <Button onClick={() => setVisible(true)}>Open</Button>
-      <Modal visible={visible}></Modal>
-    </div>
-  );
+const APP = () => {
+  const [visible, setVisible] = useState<boolean>(false);
+  return <Modal visible={visible} setVisible={setVisible} />;
 };
-export default ModalElement;
+export default memo(APP);
