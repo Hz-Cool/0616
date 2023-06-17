@@ -3,17 +3,19 @@ import { Spin } from 'antd';
 import { dynamic } from 'dva';
 import styles from './global.css';
 import { Route, Redirect, Switch, Router } from 'react-router';
-import NotFound from './pages/error/404';
-import AUTH from './pages/test1';
+import Modal from './pages/modal';
+console.log("🚀  Modal:", Modal)
 
 dynamic.setDefaultLoadingComponent(() => <Spin size="large" className={styles.globalSpin} />)
 
 function RouterRedict({ history }) {
   return (
     <Switch>
-      <Router path="*" to="/moadl"/>
-      <Redirect  to="/moadl" />
-      <AUTH />
+      <Route exact path="/" component={Modal} />
+      <Route exact path="/modal" component={Modal} />
+      {/* <Router path="/" to="/" />
+      <Redirect to="/" /> */}
+
     </Switch>
   );
 }

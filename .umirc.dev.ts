@@ -4,7 +4,7 @@ const myRouter = require("./src/routers/index").globeRouters.routes;
 export default defineConfig({
   "404": true,
   define: {},
-  base: "/",
+  base: "/0616",
   dva: {
     immer: true,
   },

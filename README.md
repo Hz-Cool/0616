@@ -16,6 +16,8 @@ or
 yarn
 ```
 
+or
+
 ```
 npm install -g cnpm --registry=https://registry.npmmirror.com
 
@@ -24,4 +26,6 @@ cnpm install
 
 # run
 
+```
 npm run start
+```

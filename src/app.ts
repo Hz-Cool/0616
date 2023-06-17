@@ -9,10 +9,6 @@ export const dva = {
     },
   },
 };
-export async function getInitialState() {
-  // const data = await fetchXXX();
-  // return data;
-}
 
 export const request: RequestConfig = {
   errorConfig: {

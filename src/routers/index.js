@@ -1,12 +1,16 @@
 exports.globeRouters = {
   routes: [
-
     {
-      title: "modal", // 请配置权限
+      title: "modal",
       path: "/",
       component: "./modal",
-      menu: false,
+      menu: true,
     },
-
+    {
+      title: "modal",
+      path: "/modal",
+      component: "./modal",
+      menu: true,
+    },
   ],
 };
