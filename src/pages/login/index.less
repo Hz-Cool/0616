@@ -1,0 +1,115 @@
+.login {
+  overflow: auto;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  .left {
+    flex: 2;
+    height: 100%;
+    // min-height: 280px;
+    background-image: url(../../assets/login.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    .logo {
+      width: 225px;
+      height: 113px;
+      margin: 90px 0px 0px 7vw;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    .welcome {
+      position: absolute;
+      bottom: 0px;
+      margin: 0px 0px 20vh 7vw;
+      .p1 {
+        font-size: 48px;
+        font-weight: 500;
+        color: #ffffff;
+        line-height: 71px;
+      }
+      .p2 {
+        font-size: 48px;
+        font-weight: 200;
+        color: #ffffff;
+        line-height: 71px;
+      }
+      .p3 {
+        margin-top: 30px;
+        width: 74px;
+        height: 8px;
+        background: #ffffff;
+      }
+    }
+  }
+  .right {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .btn {
+      color: #eeeeee;
+      font-size: 18px;
+      text-align: center;
+      cursor: pointer;
+      margin-top: 10px;
+      position: absolute;
+      bottom: 20px;
+    }
+    .form {
+      width: 22vw;
+      padding: 0px 24px 24px 24px;
+      border: 0px solid red;
+      text-align: center;
+
+      .item-btn {
+        margin-top: 45px;
+      }
+
+      .title {
+        font-size: 30px;
+        font-weight: bold;
+        color: rgba(34, 41, 50, 1);
+        margin: 20px;
+        text-align: center;
+        margin-bottom: 50px;
+      }
+
+      .input {
+        border-radius: 4px;
+        background: #f1f4f9;
+        border: 1px solid #d8d8d8;
+        color: #000;
+      }
+      .btnLogin {
+        width: 66%;
+        background: rgb(58, 48, 98);
+        color: white;
+        height: 55px;
+        font-size: 20px;
+      }
+      .tip {
+        color: #4379ee;
+        font-size: 18px;
+        text-align: center;
+        margin-top: 10px;
+      }
+    }
+    @media screen and (max-width: 1360px) {
+      .form {
+        width: 354px;
+      }
+    }
+  }
+
+  :global {
+    .ant-form-vertical .ant-form-item-label > label {
+      color: rgba(34, 41, 50, 1);
+    }
+  }
+}
